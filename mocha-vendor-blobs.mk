@@ -23,6 +23,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/mocha/proprietary/bin/bt_loader.sh:system/vendor/bin/bt_loader.sh \
     vendor/xiaomi/mocha/proprietary/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
+    vendor/xiaomi/mocha/proprietary/etc/enctune.conf:system/etc/enctune.conf \
     vendor/xiaomi/mocha/proprietary/etc/firmware/BCM4350C0.hcd:$(TARGET_COPY_OUT_VENDOR)/firmware/BCM4350C0.hcd \
     vendor/xiaomi/mocha/proprietary/etc/firmware/fw_bcm4354.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fw_bcmdhd.bin\
     vendor/xiaomi/mocha/proprietary/etc/firmware/fw_bcm4354_ap.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fw_bcmdhd_apsta.bin \
@@ -30,6 +31,20 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mocha/proprietary/etc/firmware/bq27520_lgc.bqfs:system/etc/firmware/bq27520_lgc.bqfs \
     vendor/xiaomi/mocha/proprietary/etc/firmware/lp5521:system/etc/firmware/lp5521 \
     vendor/xiaomi/mocha/proprietary/etc/firmware/marvel_p2p.conf:system/etc/firmware/marvel_p2p.conf \
+    vendor/xiaomi/mocha/proprietary/etc/firmware/nvram.txt:system/etc/firmware/nvram.txt \
+    vendor/xiaomi/mocha/proprietary/etc/firmware/tfa9890.config:system/etc/firmware/tfa9890.config \
+    vendor/xiaomi/mocha/proprietary/etc/firmware/tfa9890_boot.patch:system/etc/firmware/tfa9890_boot.patch \
+    vendor/xiaomi/mocha/proprietary/etc/firmware/tfa9890_left.speaker:system/etc/firmware/tfa9890_left.speaker \
+    vendor/xiaomi/mocha/proprietary/etc/firmware/tfa9890_left_music.eq:system/etc/firmware/tfa9890_left_music.eq \
+    vendor/xiaomi/mocha/proprietary/etc/firmware/tfa9890_left_music.preset:system/etc/firmware/tfa9890_left_music.preset \
+    vendor/xiaomi/mocha/proprietary/etc/firmware/tfa9890_left_voice.eq:system/etc/firmware/tfa9890_left_voice.eq \
+    vendor/xiaomi/mocha/proprietary/etc/firmware/tfa9890_left_voice.preset:system/etc/firmware/tfa9890_left_voice.preset \
+    vendor/xiaomi/mocha/proprietary/etc/firmware/tfa9890_right_music.eq:system/etc/firmware/tfa9890_right_music.eq \
+    vendor/xiaomi/mocha/proprietary/etc/firmware/tfa9890_right_music.preset:system/etc/firmware/tfa9890_right_music.preset \
+    vendor/xiaomi/mocha/proprietary/etc/firmware/tfa9890_right.speaker:system/etc/firmware/tfa9890_right.speaker \
+    vendor/xiaomi/mocha/proprietary/etc/firmware/tfa9890_right_voice.eq:system/etc/firmware/tfa9890_right_voice.eq \
+    vendor/xiaomi/mocha/proprietary/etc/firmware/tfa9890_right_voice.preset:system/etc/firmware/tfa9890_right_voice.preset \
+    vendor/xiaomi/mocha/proprietary/etc/firmware/tfa9890_rom.patch:system/etc/firmware/tfa9890_rom.patch \
     vendor/xiaomi/mocha/proprietary/etc/firmware/marvel_wpa.conf:system/etc/firmware/marvel_wpa.conf \
     vendor/xiaomi/mocha/proprietary/etc/firmware/nvavp_aud_ucode.bin:system/etc/firmware/nvavp_aud_ucode.bin \
     vendor/xiaomi/mocha/proprietary/etc/firmware/nvavp_os_0ff00000.bin:system/etc/firmware/nvavp_os_0ff00000.bin \
@@ -55,6 +70,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mocha/proprietary/vendor/lib/egl/libEGL_tegra.so:system/vendor/lib/egl/libEGL_tegra.so \
     vendor/xiaomi/mocha/proprietary/vendor/lib/egl/libGLESv1_CM_tegra.so:system/vendor/lib/egl/libGLESv1_CM_tegra.so \
     vendor/xiaomi/mocha/proprietary/vendor/lib/egl/libGLESv2_tegra.so:system/vendor/lib/egl/libGLESv2_tegra.so \
+    vendor/xiaomi/mocha/proprietary/vendor/lib/hw/audio.primary.vendor.tegra.so:system/vendor/lib/hw/audio.primary.vendor.tegra.so \
     vendor/xiaomi/mocha/proprietary/lib/hw/audio_policy.tegra.so:system/vendor/lib/hw/audio_policy.tegra.so \
     vendor/xiaomi/mocha/proprietary/lib/hw/camera.vendor.tegra.so:system/vendor/lib/hw/camera.vendor.tegra.so \
     vendor/xiaomi/mocha/proprietary/lib/hw/lights.tegra.so:system/vendor/lib/hw/lights.tegra.so \
@@ -67,7 +83,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mocha/proprietary/lib/libinvensense_hal.so:system/lib/libinvensense_hal.so \
     vendor/xiaomi/mocha/proprietary/lib/libmllite.so:system/lib/libmllite.so \
     vendor/xiaomi/mocha/proprietary/lib/libmplmpu.so:system/lib/libmplmpu.so \
-    vendor/xiaomi/mocha/proprietary/lib/libnvoice.so:system/lib/libnvoice.so \
+    vendor/xiaomi/mocha/proprietary/vendor/lib/libnvoice.so:system/vendor/lib/libnvoice.so \
     vendor/xiaomi/mocha/proprietary/lib/libopencv24_tegra.so:system/lib/libopencv24_tegra.so \
     vendor/xiaomi/mocha/proprietary/lib/librm31080.so:system/lib/librm31080.so \
     vendor/xiaomi/mocha/proprietary/lib/librm_ts_service.so:system/lib/librm_ts_service.so \
@@ -215,5 +231,5 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mocha/proprietary/vendor/lib/libaffinitydaemon.so:system/vendor/lib/libaffinitydaemon.so \
     vendor/xiaomi/mocha/proprietary/vendor/lib/libstagefrighthw.so:system/vendor/lib/libstagefrighthw.so \
      vendor/xiaomi/mocha/proprietary/vendor/lib/libnvgov_ui.so:system/vendor/lib/libnvgov_ui.so \
-     vendor/xiaomi/mocha/proprietary/vendor/lib/libgov_ui.so:system/vendor/lib/libgov_ui.so \
-    
+     vendor/xiaomi/mocha/proprietary/vendor/lib/libgov_ui.so:system/vendor/lib/libgov_ui.so
+
