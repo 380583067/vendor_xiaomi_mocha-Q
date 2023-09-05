@@ -16,8 +16,6 @@
 
 PRODUCT_PACKAGES += \
     omniswitch \
-    aurora \
-    auroradroid \
     SimpleKeyboard
 
 PRODUCT_COPY_FILES += \
