@@ -18,7 +18,6 @@ PRODUCT_PACKAGES += \
     SimpleKeyboard
 
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/mocha/proprietary/bin/bt_loader.sh:system/vendor/bin/bt_loader.sh \
     vendor/xiaomi/mocha/proprietary/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
     vendor/xiaomi/mocha/proprietary/etc/enctune.conf:system/etc/enctune.conf \
     vendor/xiaomi/mocha/proprietary/etc/firmware/BCM4350C0.hcd:$(TARGET_COPY_OUT_VENDOR)/firmware/BCM4350C0.hcd \
