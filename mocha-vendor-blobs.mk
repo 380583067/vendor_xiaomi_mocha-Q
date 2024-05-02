@@ -42,6 +42,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mocha/proprietary/etc/firmware/tfa9890_right_voice.preset:system/etc/firmware/tfa9890_right_voice.preset \
     vendor/xiaomi/mocha/proprietary/etc/firmware/tfa9890_rom.patch:system/etc/firmware/tfa9890_rom.patch \
     vendor/xiaomi/mocha/proprietary/etc/firmware/marvel_wpa.conf:system/etc/firmware/marvel_wpa.conf \
+    vendor/xiaomi/mocha/proprietary/etc/firmware/nvavp_aacdec_ucode.bin:system/etc/firmware/nvavp_aacdec_ucode.bin \
+    vendor/xiaomi/mocha/proprietary/etc/firmware/nvavp_mp3dec_ucode.bin:system/etc/firmware/nvavp_mp3dec_ucode.bin \
     vendor/xiaomi/mocha/proprietary/etc/firmware/nvavp_aud_ucode.bin:system/etc/firmware/nvavp_aud_ucode.bin \
     vendor/xiaomi/mocha/proprietary/etc/firmware/nvavp_os_0ff00000.bin:system/etc/firmware/nvavp_os_0ff00000.bin \
     vendor/xiaomi/mocha/proprietary/etc/firmware/nvavp_os_8ff00000.bin:system/etc/firmware/nvavp_os_8ff00000.bin \
@@ -231,6 +233,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mocha/proprietary/vendor/lib/libnvaudiofx.so:system/vendor/lib/libnvaudiofx.so \
     vendor/xiaomi/mocha/proprietary/vendor/lib/libnvvisualizer.so:system/vendor/lib/libnvvisualizer.so \
     vendor/xiaomi/mocha/proprietary/vendor/lib/alsaold.so:system/vendor/lib/alsaold.so \
-
+    vendor/xiaomi/mocha/proprietary/vendor/lib/libnvcompute.so:system/vendor/lib/libnvcompute.so \
+    vendor/xiaomi/mocha/proprietary/vendor/lib/libnvrm_gpu.so:system/vendor/lib/libnvrm_gpu.so \
+    vendor/xiaomi/mocha/proprietary/vendor/lib/libnvcamerautils.so:system/vendor/lib/libnvcamerautils.so \
+    vendor/xiaomi/mocha/proprietary/vendor/lib/libnvcamlog.so:system/vendor/lib/libnvcamlog.so \
+    vendor/xiaomi/mocha/proprietary/vendor/lib/libnvcamv4l2.so:system/vendor/lib/libnvcamv4l2.so \
+    vendor/xiaomi/mocha/proprietary/vendor/lib/libstlport.so:system/vendor/lib/libstlport.so
 
 
