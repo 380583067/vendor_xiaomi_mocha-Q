@@ -16,10 +16,7 @@
 
 PRODUCT_PACKAGES += \
     browser \
-    omniswitch \
     SimpleKeyboard \
-    aurora \
-    auroradroid \
     gallery
 
 PRODUCT_COPY_FILES += \
